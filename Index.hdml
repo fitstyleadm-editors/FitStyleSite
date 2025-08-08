@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fit Style - Loja Virtual</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Fit Style</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#carrinho">Carrinho (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Moda que respeita quem você é</h2>
+        <p>Descubra peças que valorizam sua individualidade e estilo.</p>
+      </div>
+    </section>
+
+    <section id="produtos" class="produtos container">
+      <h3>Nossos Produtos</h3>
+      <div class="lista-produtos">
+        <!-- Produto 1 -->
+        <div class="produto">
+          <img src="https://via.placeholder.com/200x250?text=Produto+1" alt="Produto 1" />
+          <h4>Camisa Fitness</h4>
+          <p class="preco">R$ 79,90</p>
+          <button class="btn-adicionar" data-nome="Camisa Fitness" data-preco="79.90">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Produto 2 -->
+        <div class="produto">
+          <img src="https://via.placeholder.com/200x250?text=Produto+2" alt="Produto 2" />
+          <h4>Legging Confort</h4>
+          <p class="preco">R$ 99,90</p>
+          <button class="btn-adicionar" data-nome="Legging Confort" data-preco="99.90">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Produto 3 -->
+        <div class="produto">
+          <img src="https://via.placeholder.com/200x250?text=Produto+3" alt="Produto 3" />
+          <h4>Jaqueta Esportiva</h4>
+          <p class="preco">R$ 149,90</p>
+          <button class="btn-adicionar" data-nome="Jaqueta Esportiva" data-preco="149.90">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="carrinho" class="carrinho container">
+      <h3>Seu Carrinho</h3>
+      <ul id="lista-carrinho">
+        <li>Seu carrinho está vazio.</li>
+      </ul>
+      <p class="total">Total: R$ <span id="total">0,00</span></p>
+      <button id="btn-limpar" disabled>Limpar Carrinho</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Fit Style - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
